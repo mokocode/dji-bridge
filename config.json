@@ -1,0 +1,54 @@
+{
+    "controller_name_filter": "",
+    "polling_rate_hz": 500,
+
+    "axes": {
+        "roll": {
+            "source_axis": 0,
+            "vjoy_axis": "X",
+            "invert": false,
+            "deadzone": 0.03,
+            "expo": 0.0,
+            "trim": 0.0
+        },
+        "pitch": {
+            "source_axis": 1,
+            "vjoy_axis": "Y",
+            "invert": false,
+            "deadzone": 0.03,
+            "expo": 0.0,
+            "trim": 0.0
+        },
+        "throttle": {
+            "source_axis": 2,
+            "vjoy_axis": "Z",
+            "invert": false,
+            "deadzone": 0.03,
+            "expo": 0.0,
+            "trim": 0.0
+        },
+        "yaw": {
+            "source_axis": 4,
+            "vjoy_axis": "RZ",
+            "invert": false,
+            "deadzone": 0.03,
+            "expo": 0.0,
+            "trim": 0.0
+        }
+    },
+
+    "buttons": {
+        "0": 1,
+        "1": 2,
+        "2": 3,
+        "3": 4,
+        "4": 5,
+        "5": 6,
+        "6": 7,
+        "7": 8
+    },
+
+    "_comment_axes": "source_axis = WinMM axis index: 0=X (Roll), 1=Y (Pitch), 2=Z (Throttle), 4=U (Yaw). vjoy_axis = vJoy axis name (X, Y, Z, RX, RY, RZ, SL0, SL1).",
+    "_comment_buttons": "Keys are DJI WinMM button numbers (0-23 as strings), values are vJoy button numbers (1-32).",
+    "_comment_controller": "controller_name_filter: leave empty to auto-detect DJI (VID 0x2CA3), or specify slot index."
+}

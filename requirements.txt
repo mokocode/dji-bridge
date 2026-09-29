@@ -1,0 +1,2 @@
+pygame>=2.5.0
+pyvjoystick>=1.1.2
