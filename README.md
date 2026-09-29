@@ -1,4 +1,4 @@
-# DJI FPV Controller 2 → vJoy Bridge for games. Mainly Wardogs
+# DJI FPV Controller 2 → vJoy Bridge -> Wardogs
 
 Turns your DJI FPV Controller 2 into a standard DirectInput joystick that Wardogs
 recognizes as a HOTAS
