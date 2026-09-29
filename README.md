@@ -1,7 +1,7 @@
 # DJI FPV Controller 2 → vJoy Bridge for Wardogs
 
 Turns your DJI FPV Controller 2 into a standard DirectInput joystick that Wardogs
-recognizes as a HOTAS — same as your Saitek X52.
+recognizes as a HOTAS
 
 ## How It Works
 
