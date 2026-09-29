@@ -20,8 +20,8 @@ standard flight stick — no different from a Saitek X52.
 ## Prerequisites
 
 1. **Python 3.8 or higher**:
-   - Download and install from [python.org](https://www.python.org/downloads/).
-   - ⚠️ **Important:** During installation, make sure to check **"Add python.exe to PATH"**.
+   - `SETUP.bat` will automatically check for and install Python if it is missing on your system.
+   - If installing manually, download from [python.org](https://www.python.org/downloads/) and make sure to check **"Add python.exe to PATH"**.
 2. **Windows 10 / 11** (64-bit)
 
 ---
@@ -31,6 +31,7 @@ standard flight stick — no different from a Saitek X52.
 ### 1. Run Setup (`SETUP.bat`)
 
 Double-click **`SETUP.bat`**:
+- Checks for Python; automatically installs it if missing.
 - Installs required Python packages (`pygame`, `pyvjoystick`).
 - Checks if vJoy is installed. If not, it will automatically launch `vJoySetup_v2.2.2.0_Win10_Win11.exe` included in this folder.
 
