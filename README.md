@@ -1,7 +1,7 @@
-# DJI FPV Controller 2 → vJoy Bridge -> Wardogs
+# DJI FPV Controller 2 → vJoy Bridge for Wardogs
 
 Turns your DJI FPV Controller 2 into a standard DirectInput joystick that Wardogs
-recognizes as a HOTAS
+recognizes as a HOTAS — same as your Saitek X52.
 
 ## How It Works
 
@@ -17,21 +17,31 @@ standard flight stick — no different from a Saitek X52.
 
 ---
 
+## Prerequisites
+
+1. **Python 3.8 or higher**:
+   - Download and install from [python.org](https://www.python.org/downloads/).
+   - ⚠️ **Important:** During installation, make sure to check **"Add python.exe to PATH"**.
+2. **Windows 10 / 11** (64-bit)
+
+---
+
 ## Quick Start
 
-### 1. Install vJoy Driver (one time)
+### 1. Run Setup (`SETUP.bat`)
 
-1. Download from vJoySetup_v2.2.2.0_Win10_Win11.exe
-2. Install it
-3. Open **"Configure vJoy"** from the Start menu
-4. Set up **Device #1**:
+Double-click **`SETUP.bat`**:
+- Installs required Python packages (`pygame`, `pyvjoystick`).
+- Checks if vJoy is installed. If not, it will automatically launch `vJoySetup_v2.2.2.0_Win10_Win11.exe` included in this folder.
+
+### 2. Configure vJoy (One-Time)
+
+After vJoy is installed:
+1. Open **"Configure vJoy"** from the Windows Start menu.
+2. Set up **Device #1**:
    - ✅ Check **all 8 axes** (X, Y, Z, Rx, Ry, Rz, Slider, Dial)
    - Set **Number of Buttons** to **16**
    - Click **Apply**
-
-### 2. Run Setup
-
-Double-click **`SETUP.bat`** — it installs the Python packages and verifies everything.
 
 ### 3. Find Your Axis Numbers
 
@@ -125,9 +135,10 @@ Maps DJI button indices to vJoy button numbers. The keys are DJI button numbers
 
 | File              | Purpose |
 |-------------------|---------|
-| `SETUP.bat`       | One-time setup — installs dependencies |
+| `SETUP.bat`       | One-time setup — installs dependencies & vJoy |
 | `DETECT.bat`      | Identify your controller's axis/button numbers |
 | `BRIDGE.bat`      | Launch the bridge (keep running while playing) |
+| `vJoySetup_v2.2.2.0_Win10_Win11.exe` | vJoy driver installer |
 | `config.json`     | Axis mapping, deadzones, curves |
 | `bridge.py`       | Main bridge script |
 | `detect.py`       | Controller diagnostic tool |
