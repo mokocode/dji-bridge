@@ -21,7 +21,7 @@ standard flight stick — no different from a Saitek X52.
 
 ### 1. Install vJoy Driver (one time)
 
-1. Download from **https://github.com/njz3/vJoy/releases** (get the latest `.exe`)
+1. Download from vJoySetup_v2.2.2.0_Win10_Win11.exe
 2. Install it
 3. Open **"Configure vJoy"** from the Start menu
 4. Set up **Device #1**:
